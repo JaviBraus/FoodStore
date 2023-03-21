@@ -6,7 +6,11 @@ body{
     overflow-x: hidden;
     }
 
-
+.custom-bc {
+    background-color: lightgray;
+    padding: 0.5%;
+    margin-top: 2%;
+}
 
 
 
@@ -56,7 +60,7 @@ footer{
     flex: 1 150px;
     padding: 10px 5px 2px 5px ;
     border: 0.2px solid grey;
-    border-radius: 6%;
+    border-radius: 2%;
     margin: 0.2%;
     background-color: grey;
     color: white;
