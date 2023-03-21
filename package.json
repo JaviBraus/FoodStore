@@ -1,0 +1,29 @@
+{
+  "name": "fsdev",
+  "version": "1.0.0",
+  "description": "A Nodejs project for training",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaviBraus/Hotels-guide.git"
+  },
+  "author": "Javier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaviBraus/Hotels-guide/issues"
+  },
+  "homepage": "https://github.com/JaviBraus/Hotels-guide#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "open-iconic": "^1.1.1",
+    "popper.js": "^1.16.1"
+  }
+}
