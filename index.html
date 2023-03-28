@@ -13,13 +13,13 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-      <a class="navbar-brand" href="#">Home</a>
+      <a class="navbar-brand" style="margin-left: 2%;" href="#">Home</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
           <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse" style="margin-left: 32%;" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="about.html">Sobre nosotros</a></li>
+              <li class="nav-item" style="padding: 0 10px 0 10px;" ><a class="nav-link" href="about.html">Sobre nosotros</a></li>
               <li class="nav-item"><a class="nav-link" href="prices.html">Precios</a></li>
               <li class="nav-item"><a class="nav-link" href="terms.html">Términos</a></li>
               <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
@@ -36,26 +36,73 @@
           <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
       </nav>
-        <div class="d-flex">
-            <div class="col-sm-4">
-                <p>
-                  <h3>¿Cómo funciona?</h3>
-                  <p>Selecciona el producto gastronómico asiático que más te atraiga</p>
-                </p>
+
+      <div id="carouselExampleDark" class="carousel carousel slide" style="margin-bottom: 1%;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="images/6.hanamidango_3.jpg" class="d-block w-100" style="height: 500px; width: 700px;">
+            <div class="carousel-caption d-none d-md-block slideText">
+              <h5>Dango</h5>
+              <p>Un delicioso bocado agridulce.</p>
             </div>
-            <div class="col-sm-4">
-              <p>
-                <h3>¿Acepta pago con tarjeta?</h3>
-                <p>Efectivamente, ya que esta tienda es exclusivamente online.</p>
-              </p>
           </div>
-          <div class="col-sm-4">
-            <p>
-              <h3>¿Cuánto tarda en llegar?</h3>
-              <p>Alrededor de 2 días </p>
-            </p>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="images/sushi-casero.jpg" class="d-block w-100" style="height: 500px; width: 700px;">
+            <div class="carousel-caption d-none d-md-block slideText">
+              <h5>Sushi</h5>
+              <p>El plato más popular de Japón.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/vietnamese-coconut-ice-cream-463327.jpg" class="d-block w-100" style="height: 500px; width: 700px;">
+            <div class="carousel-caption d-none d-md-block slideText">
+              <h5>Kem Dua</h5>
+              <p>Un exótico helado.</p>
+            </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+        <hr>
+    <p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="collapseExample">
+          ¿Cómo funciona?
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#tarjeta" aria-expanded="false" aria-controls="collapseExample">
+          ¿Acepta pago con tarjeta?
+        </button>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#llegar" aria-expanded="false" aria-controls="collapseExample">
+          ¿Cuánto tarda en llegar?
+        </button>
+      </p>
+      <div class="collapse" id="funciona">
+        <div class="card card-body">
+          Selecciona el producto gastronómico asiático que más te atraiga
         </div>
+      </div>
+      <div class="collapse" id="tarjeta">
+        <div class="card card-body">
+          Efectivamente, ya que esta tienda es exclusivamente online.
+        </div>
+      </div>
+      <div class="collapse" id="llegar">
+        <div class="card card-body">
+          Alrededor de 2 días
+        </div>
+      </div>
+        
         <hr>
         <div class="d-flex">
             <div class="card card-food d-flex flex-column justify-content-between">
@@ -357,42 +404,23 @@
     </div>
     </footer>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <script
+<script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+    $("[data-toggle='tooltip']").tooltip();
+    $("[data-toggle='popover']").popover();
+    $('.carousel').carousel({
+      interval: 2000
+    });
+
+  </script>
   </body>
 </html>

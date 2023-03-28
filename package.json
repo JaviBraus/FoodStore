@@ -4,8 +4,10 @@
   "description": "A Nodejs project for training",
   "main": "index.html",
   "scripts": {
+    "dev": "lite-server",
+    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "lite-server"
+    "lite": "lite-server"
   },
   "repository": {
     "type": "git",

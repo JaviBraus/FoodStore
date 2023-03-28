@@ -30,6 +30,7 @@
       <div class="jumbotron">
         <h1>Precios</h1>
       </div>
+
       <div class="container">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb custom-bc">
@@ -37,167 +38,238 @@
             <li class="breadcrumb-item active" aria-current="page">Precios</li>
           </ol>
         </nav>
-        <table class="table table-dark table-striped" style="margin-bottom: 6%;">
-          <thead>
-            <tr>
-              <th scope="col">Plato</th>
-              <th scope="col">1 Unidad</th>
-              <th scope="col">2 Unidades</th>
-              <th scope="col">País de origen</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Lote de sushi</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Paquete de Rollitos Primavera</td>
-              <td>3€</td>
-              <td>6€</td>
-              <td>China</td>
-            </tr>
-            <tr>
-              <td>Envasado de Kimchi</td>
-              <td>6€</td>
-              <td>12€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Paquete de Tempura</td>
-              <td>5€</td>
-              <td>10€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Ramen Nisshin Picante</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Paquete de Dim Sum</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Taiwán</td>
-            </tr>
-            <tr>
-              <td>Paquete de Galletas Dalgona</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Paquete de Mochi</td>
-              <td>3€</td>
-              <td>6€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Paquete de Peppero</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Paquete de Mandu</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Bote de Sriracha</td>
-              <td>3€</td>
-              <td>6€</td>
-              <td>Tailandia</td>
-            </tr>
-            <tr>
-              <td>Botella Ramune</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Pan Chino</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>China</td>
-            </tr>
-            <tr>
-              <td>Preparado de Bulgogi</td>
-              <td>6€</td>
-              <td>12€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Filete de carne Wagyu</td>
-              <td>15€</td>
-              <td>30€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Helado de coco Kem Dua</td>
-              <td>3€</td>
-              <td>6€</td>
-              <td>Vietnam</td>
-            </tr>
-            <tr>
-              <td>Taiyaki</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Onigiri</td>
-              <td>3€</td>
-              <td>6€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Bacchus-D</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Dango</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Japón</td>
-            </tr>
-            <tr>
-              <td>Khao Neow</td>
-              <td>5€</td>
-              <td>10€</td>
-              <td>Tailandia</td>
-            </tr>
-            <tr>
-              <td>Té dulce de burbujas</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Taiwán</td>
-            </tr>
-            <tr>
-              <td>Yopokki</td>
-              <td>4€</td>
-              <td>8€</td>
-              <td>Corea del Sur</td>
-            </tr>
-            <tr>
-              <td>Teriyaki</td>
-              <td>2€</td>
-              <td>4€</td>
-              <td>Japón</td>
-            </tr>
-          </tbody>
-        </table>
+        <ul class="nav nav-tabs">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" id="prices-tab" type="button"
+            data-bs-target="#prices" role="tab" aria-controls="prices" aria-selected="true">Precios</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" id="cards-tab" type="button"
+            data-bs-target="#cards" role="tab" aria-controls="cards" aria-selected="true">Tarjetas aceptadas</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" id="conditions-tab" type="button"
+            data-bs-target="#conditions" role="tab" aria-controls="conditions" aria-selected="true">Condiciones</button>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabControl">
+        <div class="tab-pane fade show active" role="tabpanel" id="prices" aria-labelledby="prices-tab">
+          <table class="table table-dark table-striped" style="margin-bottom: 6%; margin-top: 3%;">
+            <thead>
+              <tr>
+                <th scope="col">Plato</th>
+                <th scope="col">1 Unidad</th>
+                <th scope="col">2 Unidades</th>
+                <th scope="col">País de origen</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lote de sushi</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Paquete de Rollitos Primavera</td>
+                <td>3€</td>
+                <td>6€</td>
+                <td>China</td>
+              </tr>
+              <tr>
+                <td>Envasado de Kimchi</td>
+                <td>6€</td>
+                <td>12€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Paquete de Tempura</td>
+                <td>5€</td>
+                <td>10€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Ramen Nisshin Picante</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Paquete de Dim Sum</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Taiwán</td>
+              </tr>
+              <tr>
+                <td>Paquete de Galletas Dalgona</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Paquete de Mochi</td>
+                <td>3€</td>
+                <td>6€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Paquete de Peppero</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Paquete de Mandu</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Bote de Sriracha</td>
+                <td>3€</td>
+                <td>6€</td>
+                <td>Tailandia</td>
+              </tr>
+              <tr>
+                <td>Botella Ramune</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Pan Chino</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>China</td>
+              </tr>
+              <tr>
+                <td>Preparado de Bulgogi</td>
+                <td>6€</td>
+                <td>12€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Filete de carne Wagyu</td>
+                <td>15€</td>
+                <td>30€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Helado de coco Kem Dua</td>
+                <td>3€</td>
+                <td>6€</td>
+                <td>Vietnam</td>
+              </tr>
+              <tr>
+                <td>Taiyaki</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Onigiri</td>
+                <td>3€</td>
+                <td>6€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Bacchus-D</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Dango</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Japón</td>
+              </tr>
+              <tr>
+                <td>Khao Neow</td>
+                <td>5€</td>
+                <td>10€</td>
+                <td>Tailandia</td>
+              </tr>
+              <tr>
+                <td>Té dulce de burbujas</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Taiwán</td>
+              </tr>
+              <tr>
+                <td>Yopokki</td>
+                <td>4€</td>
+                <td>8€</td>
+                <td>Corea del Sur</td>
+              </tr>
+              <tr>
+                <td>Teriyaki</td>
+                <td>2€</td>
+                <td>4€</td>
+                <td>Japón</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+
+
+        </div>
+        <div class="tab-pane fade show" role="tabpanel" id="cards" aria-labelledby="cards-tab">
+          <h3 style="margin-top: 2%; margin-bottom: 2%;">Aceptamos las siguientes tarjetas:</h3>
+          <ul class="list-group" style="margin-bottom: 6%;">
+            <li class="list-group-item">MasterCard</li>
+            <li class="list-group-item">Visa</li>
+            <li class="list-group-item">American Express</li>
+          </ul>
+          <div class="row" style="margin-bottom: 10%;">
+            <div class="col-sm-4">
+              <img class="visaSize" src="images/Visa_Inc._logo.svg.png">
+            </div>
+            <div class="col-sm-4">
+              <img class="mcSize"  src="images/Mastercard-logo.svg.png">
+            </div>
+            <div class="col-sm-4">
+              <img class="axSize"  src="images/american_express_logo_wordmark_detail.png">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade show" role="tabpanel" id="conditions" aria-labelledby="conditions-tab" style="margin-bottom: 5.8%;">
+          <h3 style="margin-top: 2%; margin-bottom: 2%;">Condiciones de compra:</h3>
+          Todos los productos son nuevos, y van presentados en su embalaje o precinto original.
+
+            El color de todos los productos se puede visualizar en la imagen del producto. Debido a la visualización del color en el monitor y dependiendo de los ajustes del mismo pueden existir variaciones de color con respecto a la realidad. No podremos aceptar cambios o devoluciones debido a que el color no sea exactamente el mismo que se esperaba. Sólo se aceptarán devoluciones si un producto llega en mal estado debido a problemas de fábrica o problemas con el transporte o si es defectuoso.
+            
+            Precios
+            
+            Los precios se expresan en EUROS, impuestos incluídos, y no incluyen gastos de envío ni, en su caso, de contra reembolso, salvo indicación expresa en contrario en el producto concreto. Los precios expuestos podrán ser revisados y modificados si las condiciones lo requieren en cualquier momento. Los productos están disponibles para su venta hasta fin de existencias.
+            
+            Los productos se sirven según tarifas en vigor en la página web en el momento del registro del pedido.
+
+            <br><br>
+              Las presentes condiciones generales se aplican, sin restricción ni reserva alguna, a las ventas realizadas por la sociedad Alimentos de Asia, con domicilio en Carrer de Toixols 10, Alicante/Alacant, 0348, Comunitat Valenciana, España, inscrita en el Registro Mercantil de Alicante tomo 32, libro 19, folio 4, sección 2.5, hoja 4, a los clientes que adquieran los productos puestos a la venta a través de la página Web.
+
+Las ventas celebradas son ventas a distancia reguladas por la legislación española vigente en la materia.
+
+Estas condiciones generales de venta son accesibles en todo momento desde la página Web y prevalecerán sobre cualquier otro documento con el que se contradigan, sin perjuicio de lo que disponga la legislación vigente.
+
+La validación del pedido por el cliente supone la aceptación sin reservas de las presentes condiciones generales de venta. En caso de ser modificadas estas condiciones generales de venta serán vinculantes para todas las compras realizadas con posterioridad a su publicación en el sitio Web.
+            
+<br><br>
+              Los residentes en Canarias y Baleares obtienen descuentos del 20% a partir de compras superiores a los 20 euros, de acuerdo con establecido en la Ley 123 de 1996, Artículo 30, Sección 12, Párrafo 6, Línea 3.
+              <br><br>
+        </div>
+      </div>
+  
+      </div>
+    
+      
+        
+      
   
       </div>
       
-
-
+      
 
 
 
@@ -225,6 +297,7 @@
           <a class="footer-style" href="terms.html">Términos y condiciones</a>
         </div>
       </div>
-      </footer>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

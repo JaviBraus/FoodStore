@@ -100,3 +100,24 @@ footer{
     width: 200px;
     height: 100px;
 }
+
+.visaSize {
+    width: 300px;
+    height: 100px;
+}   
+
+.mcSize {
+    width: 200px;
+    height: 150px;
+}
+
+.axSize {
+    width: 410px;
+    height: 150px;
+}
+
+.slideText {
+    background-color: darkorange;
+    border-radius: 6%;
+    opacity: 0.8;
+}
